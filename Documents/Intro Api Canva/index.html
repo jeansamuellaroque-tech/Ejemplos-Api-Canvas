@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- ============================= -->
+    <!-- METADATOS DEL DOCUMENTO      -->
+    <!-- ============================= -->
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ejemplo de Canvas con fondo gris claro usando CSS externo">
+    <meta name="author" content="Tu Nombre">
+    <link rel="stylesheet" href="./css/styles.css">
+    
+    <title>Canvas Gris Claro</title>
+
+    <!-- Enlace al archivo CSS externo -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- ============================= -->
+    <!-- ELEMENTO CANVAS              -->
+    <!-- ============================= -->
+    <canvas id="canvas"></canvas>
+
+    <script>
+        const canvas = document.getElementById("canvas");
+        const ctx = canvas.getContext("2d");
+
+        // Ajustar tamaño al 50% de la pantalla
+        canvas.width = window.innerWidth * 0.5;
+        canvas.height = window.innerHeight * 0.5;
+
+        // Dibujar rectángulo
+        ctx.fillStyle = "green";
+        ctx.fillRect(20, 20, 500, 500);
+    </script>
+
+</body>
+</html>
+
